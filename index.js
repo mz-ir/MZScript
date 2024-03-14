@@ -100,20 +100,20 @@ function mzscript() {
   atajoForo('p=forum&sub=topics&forum_id=255&sport=soccer', 'PYR', 'Ir a Preguntas y Respuestas', 1);
   atajoForo('p=forum&sub=topics&forum_id=250&sport=soccer', 'DA', 'Ir a Discusión Abierta', 1);
   atajoForo('p=forum&sub=topics&forum_id=251&sport=soccer', 'FED', 'Ir a Federaciones', 1);
-  atajoExtInt('http://i.imgur.com/7Uttzyv.gif', '?p=transfer&sub=yourplayers', 'Ir al Monitoreo', 0);
-  atajoExtInt('http://i.imgur.com/DRf7WGm.gif', '?p=shortlist', 'Ir a Seguimiento', 1);
-  atajoExtInt('http://i.imgur.com/LhtVqWQ.gif', '?p=players&sub=alt', 'Ver Vista Alternativa', 1);
-  atajoExtInt('http://i.imgur.com/gG2hhct.gif', 'http://www.mzplus.info/p', 'Ir al Skiller', 1);
-  atajoExtInt('http://i.imgur.com/G40I9gQ.gif', 'http://imgur.com/', 'Ir a Imgur', 1);
-  atajoExtInt('http://i.imgur.com/V1vgq9d.gif', '?p=economy', 'Ver Finanzas', 1);
-  atajoExtInt('http://i.imgur.com/jzbCTLE.gif', '?p=transfer', 'Ver Mercado', 1);
-  atajoExtInt('http://i.imgur.com/eqx7dq1.gif', 'http://www.mzplus.info/tax', 'Calcular Impuestos', 1);
-  atajoExtInt('http://i.imgur.com/TzYBzYW.gif', '?p=match&sub=played', 'Ver los Partidos Jugados', 1);
-  atajoExtInt('http://i.imgur.com/p7ZMKSw.gif', '?p=match&sub=scheduled', 'Ver los Próximos Partidos', 1);
-  atajoExtInt('http://i.imgur.com/1hvSw7g.gif', '?p=tactics&myTactic=1', 'Ir a Tácticas', 1);
-  atajoExtInt('http://i.imgur.com/v3RoRU6.gif', '?p=players&sub=unavailable', 'Ver Lesionados/Sancionados', 1);
-  atajoExtInt('http://i.imgur.com/K3PXtyE.gif', '?p=training_report', 'Ver el Reporte de Entrenamiento', 1);
-  atajoExtInt('http://i.imgur.com/1qQmgOp.gif', '?p=training', 'Ir al Entrenamiento General', 1);
+  atajoExtInt('https://i.imgur.com/7Uttzyv.gif', '?p=transfer&sub=yourplayers', 'Ir al Monitoreo', 0);
+  atajoExtInt('https://i.imgur.com/DRf7WGm.gif', '?p=shortlist', 'Ir a Seguimiento', 1);
+  atajoExtInt('https://i.imgur.com/LhtVqWQ.gif', '?p=players&sub=alt', 'Ver Vista Alternativa', 1);
+  atajoExtInt('https://i.imgur.com/gG2hhct.gif', 'http://www.mzplus.info/p', 'Ir al Skiller', 1);
+  atajoExtInt('https://i.imgur.com/G40I9gQ.gif', 'http://imgur.com/', 'Ir a Imgur', 1);
+  atajoExtInt('https://i.imgur.com/V1vgq9d.gif', '?p=economy', 'Ver Finanzas', 1);
+  atajoExtInt('https://i.imgur.com/jzbCTLE.gif', '?p=transfer', 'Ver Mercado', 1);
+  atajoExtInt('https://i.imgur.com/eqx7dq1.gif', 'http://www.mzplus.info/tax', 'Calcular Impuestos', 1);
+  atajoExtInt('https://i.imgur.com/TzYBzYW.gif', '?p=match&sub=played', 'Ver los Partidos Jugados', 1);
+  atajoExtInt('https://i.imgur.com/p7ZMKSw.gif', '?p=match&sub=scheduled', 'Ver los Próximos Partidos', 1);
+  atajoExtInt('https://i.imgur.com/1hvSw7g.gif', '?p=tactics&myTactic=1', 'Ir a Tácticas', 1);
+  atajoExtInt('https://i.imgur.com/v3RoRU6.gif', '?p=players&sub=unavailable', 'Ver Lesionados/Sancionados', 1);
+  atajoExtInt('https://i.imgur.com/K3PXtyE.gif', '?p=training_report', 'Ver el Reporte de Entrenamiento', 1);
+  atajoExtInt('https://i.imgur.com/1qQmgOp.gif', '?p=training', 'Ir al Entrenamiento General', 1);
   var url = window.location.href.split("=");
   var cid = url[3];
   if (url[1] == "private_cup&sub" || url[1] == "cup&sub" || (url[2] == "u18" || url[2] == "u21" || url[2] == "u23" || url[2] == "world" || url[2] == "u18_world")) {
@@ -138,7 +138,7 @@ function mzscript() {
     var groupContainer = $(".nice_table thead tr.seriesHeader")[0];
     if (typeof groupContainer !== 'undefined') {
       clearInterval(setterCountry);
-      var iconMostrarTabla = "<img src='http://i.imgur.com/B69WEGD.png' id='" + id + "' class='cursor' title='Compartir tabla' />";
+      var iconMostrarTabla = "<img src='https://i.imgur.com/B69WEGD.png' id='" + id + "' class='cursor' title='Compartir tabla' />";
       var thContainer = groupContainer.childNodes[1];
       thContainer.innerHTML = iconMostrarTabla;
     }
@@ -159,7 +159,7 @@ function mzscript() {
         hrefN = "?p=cup&sub=schedule&cid=" + cid.toString() + "&tid=" + tid.toString();
       var fixt = document.createElement("span");
       fixt.setAttribute('style', 'float:right');
-      fixt.innerHTML = '<a href="' + hrefN + '" target="_blank" title="Ver Programa de Partidos"><img src="http://i.imgur.com/ECRix0U.png" /></a>';
+      fixt.innerHTML = '<a href="' + hrefN + '" target="_blank" title="Ver Programa de Partidos"><img src="https://i.imgur.com/ECRix0U.png" /></a>';
       fila.appendChild(fixt);
     }
   }
@@ -170,7 +170,7 @@ function mzscript() {
       var tablaHeader = $(".nice_table thead tr.seriesHeader")[0];
       var icon = tablaHeader.childNodes[3];
       var addIcon = document.createElement("img");
-      addIcon.setAttribute('src', 'http://i.imgur.com/IwaQRmF.png');
+      addIcon.setAttribute('src', 'https://i.imgur.com/IwaQRmF.png');
       addIcon.setAttribute('style', 'float:right;cursor:pointer');
       addIcon.setAttribute('title', 'Ver división y país');
       addIcon.setAttribute('id', 'divCountry');
@@ -289,12 +289,12 @@ function mzscript() {
     var firmaBar = "<td></td><td><div class='mzbtn buttondiv button_account' title='Crear Firma'><span class='buttonClassMiddle'><span style='white-space: nowrap' id='boton3'>Crear Firma</span></span><span class='buttonClassRight'>&nbsp;</span></div>&nbsp;";
     firmaBar += "<div class='mzbtn buttondiv button_account' title='Crear Firma'><span class='buttonClassMiddle'><span style='white-space: nowrap' id='btnMostrar'>Mostrar Firma</span></span><span class='buttonClassRight'>&nbsp;</span></div>&nbsp;";
     firmaBar += "<b>Mostrar firma siempre?</b> <input type='checkbox' title='Mostrar Firma Siempre' alt='Mostrar Firma' id='mostrarY'><br />";
-    firmaBar += "<div id='divFirma' class='divHidden'><img src='http://i915.photobucket.com/albums/ac355/ccc_vader/botones/imagen2_btn2.png' title='Insertar imagen' alt='Insertar img' id='btni'/>&nbsp;";
-    firmaBar += "<img src='http://i915.photobucket.com/albums/ac355/ccc_vader/botones/negrita_btn2.png' title='Negrita' alt='Negrita' id='btnn'/>&nbsp;";
-    firmaBar += "<img src='http://i915.photobucket.com/albums/ac355/ccc_vader/botones/cursiva_btn2.png' title='Cursiva' alt='Cursiva' id='btnc'/>&nbsp;";
-    firmaBar += "<img src='http://i915.photobucket.com/albums/ac355/ccc_vader/botones/subra_btn2.png' title='Subrayado' alt='Subrayado' id='btns'/><br />";
+    firmaBar += "<div id='divFirma' class='divHidden'><img src='https://i915.photobucket.com/albums/ac355/ccc_vader/botones/imagen2_btn2.png' title='Insertar imagen' alt='Insertar img' id='btni'/>&nbsp;";
+    firmaBar += "<img src='https://i915.photobucket.com/albums/ac355/ccc_vader/botones/negrita_btn2.png' title='Negrita' alt='Negrita' id='btnn'/>&nbsp;";
+    firmaBar += "<img src='https://i915.photobucket.com/albums/ac355/ccc_vader/botones/cursiva_btn2.png' title='Cursiva' alt='Cursiva' id='btnc'/>&nbsp;";
+    firmaBar += "<img src='https://i915.photobucket.com/albums/ac355/ccc_vader/botones/subra_btn2.png' title='Subrayado' alt='Subrayado' id='btns'/><br />";
     firmaBar += "<textarea id='areaFirma' name='areaFirma' rows='5' cols='50'></textarea><br />";
-    firmaBar += "<img src='http://i915.photobucket.com/albums/ac355/ccc_vader/bot/btn_save.gif' title='Guardar Firma' alt='Guardar firma' id='btnFirma' class='cursor' /></div></td>";
+    firmaBar += "<img src='https://i915.photobucket.com/albums/ac355/ccc_vader/bot/btn_save.gif' title='Guardar Firma' alt='Guardar firma' id='btnFirma' class='cursor' /></div></td>";
     filaFirma.innerHTML = filaFirma.innerHTML + firmaBar;
   }
   function firmaFija() {
@@ -349,7 +349,7 @@ function mzscript() {
   function subirImagen() {
     var estilo = document.getElementById("contenedor").style.display;
     if (estilo == 'none' && window.opera) {
-      document.getElementById("contenedor").innerHTML = "<span style='color:red;padding:3px'> Opera no soporta la posibilidad de subir imágenes directamente. <br /><span style='color:green'>&nbsp;Firefox sí, apoya una web libre! <a href='https://affiliates.mozilla.org/link/banner/12520/3/18'><img src='http://affiliates-cdn.mozilla.org/media/uploads/banners/download-small-blue-ES.png' class='cursor' /></a></span></span>";
+      document.getElementById("contenedor").innerHTML = "<span style='color:red;padding:3px'> Opera no soporta la posibilidad de subir imágenes directamente. <br /><span style='color:green'>&nbsp;Firefox sí, apoya una web libre! <a href='https://affiliates.mozilla.org/link/banner/12520/3/18'><img src='https://affiliates-cdn.mozilla.org/media/uploads/banners/download-small-blue-ES.png' class='cursor' /></a></span></span>";
       document.getElementById("contenedor").style.display = "block";
     } else if (estilo == 'none') {
       document.getElementById("contenedor").style.display = "block";
@@ -432,7 +432,7 @@ function mzscript() {
       header = "<i>[table][th][/th][th]Equipo[/th][th]Div - País[/th][th]PJ[/th][th]PG [/th][th]PE[/th][th]PP[/th][th]GF[/th][th]GC [/th][th]=[/th][th]Pts[/th]";
     else
       header = "<i>[table][th][/th][th]Equipo[/th][th]PJ[/th][th]PG [/th][th]PE[/th][th]PP[/th][th]GF[/th][th]GC [/th][th]=[/th][th]Pts[/th]";
-    var armarLineas = "<div style='font-weight:normal'><b>Tabla - copiar todo el texto</b> <img src='http://i.imgur.com/BzYADnz.png' id='cerrar' style='float:right' class='cursor' title='Cerrar' /><br /> <br />" + header;
+    var armarLineas = "<div style='font-weight:normal'><b>Tabla - copiar todo el texto</b> <img src='https://i.imgur.com/BzYADnz.png' id='cerrar' style='float:right' class='cursor' title='Cerrar' /><br /> <br />" + header;
     var tablaDeTorneoL = tablaDeTorneo.length;
     for (var line = 0; line < tablaDeTorneoL; line++) {
       var trs = tablaDeTorneo[line];
@@ -507,7 +507,7 @@ function mzscript() {
     var btnRes = document.createElement('div');
     btnRes.setAttribute('style', 'float:right;cursor:pointer;border:2px solid #2A4CB0;width:20px;height:20px;padding:4px 0 0 4px;margin:2px 165px 0 0');
     btnRes.setAttribute('id', 'btnRes');
-    btnRes.innerHTML = "<img src='http://i.imgur.com/WL38HPq.png' title='Ver resultados' />";
+    btnRes.innerHTML = "<img src='https://i.imgur.com/WL38HPq.png' title='Ver resultados' />";
     container.appendChild(btnRes);
     document.getElementById("btnRes").addEventListener("click", verResultados, false);
   }
@@ -569,7 +569,7 @@ function mzscript() {
     divContenedora.setAttribute('id', 'divTabla');
     divContenedora.setAttribute('style', 'z-index:10;position:absolute;background-color:#000;color:#FFF;width:165px;height:auto;padding:10px;border:2px solid red');
     divContenedora.setAttribute('class', 'divVisible');
-    divContenedora.innerHTML = "<img src='http://i.imgur.com/BzYADnz.png' id='cerrar' style='float:right' class='cursor' title='Cerrar' /><table align='center'><tr><td class='tdStyle' colspan='2' style='font-size:13px'>Moneda local</td></tr><tr><td class='tdStyle tJug'>MXN </td><td><input type='radio' value='13' name='moneda' class='cInput' /></td><tr><td class='tdStyle tJug'>UYU </td><td> <input type='radio' value='4' name='moneda' class='cInput' /></td></tr><tr><td class='tdStyle tJug'>BOB  </td><td><input type='radio' value='15' name='moneda' class='cInput' /></td></tr><tr><td style='padding-top:10px' colspan='2'><button id='saveCu' class='mzbtn button_account mzs'>Guardar</button>&nbsp;<button id='resetCu' class='mzbtn button_account mzs'>Reset</button></td></tr></table>";
+    divContenedora.innerHTML = "<img src='https://i.imgur.com/BzYADnz.png' id='cerrar' style='float:right' class='cursor' title='Cerrar' /><table align='center'><tr><td class='tdStyle' colspan='2' style='font-size:13px'>Moneda local</td></tr><tr><td class='tdStyle tJug'>MXN </td><td><input type='radio' value='13' name='moneda' class='cInput' /></td><tr><td class='tdStyle tJug'>UYU </td><td> <input type='radio' value='4' name='moneda' class='cInput' /></td></tr><tr><td class='tdStyle tJug'>BOB  </td><td><input type='radio' value='15' name='moneda' class='cInput' /></td></tr><tr><td style='padding-top:10px' colspan='2'><button id='saveCu' class='mzbtn button_account mzs'>Guardar</button>&nbsp;<button id='resetCu' class='mzbtn button_account mzs'>Reset</button></td></tr></table>";
     divContenedora.innerHTML += "<br /> <table align='center'><tr><td colspan='2' class='tdStyle' style='font-size:13px'>Mostrar táctica</td></tr><tr><td class='tdStyle tJug'>Vertical  </td><td><input type='radio' name='tactica' value='1'  class='cInput' /></td></tr><tr><td class='tdStyle tJug'>Horizontal </td><td><input type='radio' name='tactica' value='0' class='cInput' /></td></tr><tr><td colspan='2' style='padding-top:10px'><button id='saveTact' class='mzbtn button_account mzs'>Guardar</button></td></tr></table><span style='font-style:italic;font-size:11px;float:right'>MZScript ©</span>";
     var ins = document.getElementById("contentDiv");
     ins.parentNode.insertBefore(divContenedora, ins);
@@ -583,7 +583,7 @@ function mzscript() {
     var btnMon = document.createElement('div');
     btnMon.setAttribute('style', 'float:right;cursor:pointer;border:2px solid #2A4CB0;width:20px;height:20px;padding:4px 0 0 4px;margin:2px 165px 0 0');
     btnMon.setAttribute('id', 'btnMon');
-    btnMon.innerHTML = "<img src='http://i.imgur.com/wU57xHb.png' title='Setear moneda y táctica' />";
+    btnMon.innerHTML = "<img src='https://i.imgur.com/wU57xHb.png' title='Setear moneda y táctica' />";
     container.appendChild(btnMon);
     document.getElementById("btnMon").addEventListener("click", setearMoneda, false);
   }
@@ -820,7 +820,7 @@ function mzscript() {
         if (filas[i].className == 'group')
           continue;
         var ad2 = document.createElement('a');
-        ad2.innerHTML = '<img src=\"http://i.imgur.com/FCw8KRW.png\" title=\"Mirar rival en MZPlus\" border=\"0\" width=\"22\" width=\"13\" />';
+        ad2.innerHTML = '<img src=\"https://i.imgur.com/FCw8KRW.png\" title=\"Mirar rival en MZPlus\" border=\"0\" width=\"22\" width=\"13\" />';
         var vtm = filas[i].childNodes[3].childNodes[7].childNodes[1].childNodes[1].childNodes[1].href;
         if (vtm.indexOf('&tid') == -1) vtm = filas[i].childNodes[3].childNodes[7].childNodes[1].childNodes[5].childNodes[2].href;
         vtm = vtm.substring(vtm.indexOf('&tid'));
@@ -897,42 +897,42 @@ function mzscript() {
     if (typeof groupContainer !== 'undefined') {
       clearInterval(setterBC);
       var height = '';
-      generarImagen('http://i.imgur.com/juiRdYs.gif', 'btnTabla2', elementID, height);
-      generarImagen('http://i.imgur.com/HGa7jFa.gif', 'upImg', elementID, height);
-      generarImagen('http://i.imgur.com/WOpvhpS.gif', 'aIcono0', elementID, height);
-      generarImagen('http://i.imgur.com/CcuKTNz.gif', 'aIcono1', elementID, height);
-      generarImagen('http://i.imgur.com/NPyAJM5.gif', 'aIcono2', elementID, height);
-      generarImagen('http://i.imgur.com/1ncAraF.gif', 'aIcono3', elementID, height);
-      generarImagen('http://i.imgur.com/xp6xUJJ.gif', 'aIcono4', elementID, height);
-      generarImagen('http://i.imgur.com/qOigaWi.png', 'aIcono5', elementID, height);
-      generarImagen('http://i.imgur.com/rSqmTPO.gif', 'aIcono6', elementID, height);
-      generarImagen('http://i.imgur.com/uLyJYhu.png', 'aIcono7', elementID, height);
-      generarImagen('http://i.imgur.com/RUQN2Hy.gif', 'aIcono8', elementID, height);
-      generarImagen('http://i.imgur.com/QuXS7fE.gif', 'aIcono9', elementID, height);
-      generarImagen('http://i.imgur.com/Bf8NC56.png', 'aIcono10', elementID, height);
-      generarImagen('http://i.imgur.com/2L3i1f4.png', 'aIcono11', elementID, height);
-      generarImagen('http://i.imgur.com/OOsLDaW.gif', 'aIcono12', elementID, height);
-      generarImagen('http://i.imgur.com/HEAlBlA.png', 'aIcono13', elementID, height);
-      generarImagen('http://i.imgur.com/O2GDd6I.png', 'aIcono14', elementID, height);
+      generarImagen('https://i.imgur.com/juiRdYs.gif', 'btnTabla2', elementID, height);
+      generarImagen('https://i.imgur.com/HGa7jFa.gif', 'upImg', elementID, height);
+      generarImagen('https://i.imgur.com/WOpvhpS.gif', 'aIcono0', elementID, height);
+      generarImagen('https://i.imgur.com/CcuKTNz.gif', 'aIcono1', elementID, height);
+      generarImagen('https://i.imgur.com/NPyAJM5.gif', 'aIcono2', elementID, height);
+      generarImagen('https://i.imgur.com/1ncAraF.gif', 'aIcono3', elementID, height);
+      generarImagen('https://i.imgur.com/xp6xUJJ.gif', 'aIcono4', elementID, height);
+      generarImagen('https://i.imgur.com/qOigaWi.png', 'aIcono5', elementID, height);
+      generarImagen('https://i.imgur.com/rSqmTPO.gif', 'aIcono6', elementID, height);
+      generarImagen('https://i.imgur.com/uLyJYhu.png', 'aIcono7', elementID, height);
+      generarImagen('https://i.imgur.com/RUQN2Hy.gif', 'aIcono8', elementID, height);
+      generarImagen('https://i.imgur.com/QuXS7fE.gif', 'aIcono9', elementID, height);
+      generarImagen('https://i.imgur.com/Bf8NC56.png', 'aIcono10', elementID, height);
+      generarImagen('https://i.imgur.com/2L3i1f4.png', 'aIcono11', elementID, height);
+      generarImagen('https://i.imgur.com/OOsLDaW.gif', 'aIcono12', elementID, height);
+      generarImagen('https://i.imgur.com/HEAlBlA.png', 'aIcono13', elementID, height);
+      generarImagen('https://i.imgur.com/O2GDd6I.png', 'aIcono14', elementID, height);
       insBR(elementID);
-      generarImagen('http://i.imgur.com/zpY2A6I.gif', 'aIcono26', elementID, height);
+      generarImagen('https://i.imgur.com/zpY2A6I.gif', 'aIcono26', elementID, height);
       height = 15;
-      generarImagen('http://i.imgur.com/RzjaSKr.gif', 'aIcono17', elementID, height);
-      generarImagen('http://i.imgur.com/XEHiXuO.gif', 'aIcono18', elementID, height);
-      generarImagen('http://i.imgur.com/1t7YpCo.gif', 'aIcono19', elementID, height);
-      generarImagen('http://i.imgur.com/BzPDfzF.gif', 'aIcono20', elementID, height);
-      generarImagen('http://i.imgur.com/UR5t0o6.gif', 'aIcono21', elementID, height);
-      generarImagen('http://i.imgur.com/aaPvRo4.gif', 'aIcono23', elementID, height);
-      generarImagen('http://i.imgur.com/KKx3thu.gif', 'aIcono25', elementID, height);
-      generarImagen('http://i.imgur.com/KnhAURP.gif', 'aIcono27', elementID, height);
-      generarImagen('http://i.imgur.com/NA84WqF.gif', 'aIcono28', elementID, height);
-      generarImagen('http://i.imgur.com/N2cdFNy.gif', 'aIcono29', elementID, height);
-      generarImagen('http://i.imgur.com/oQYWBTO.gif', 'aIcono30', elementID, height);
-      generarImagen('http://i.imgur.com/YWe8hno.gif', 'aIcono31', elementID, height);
-      generarImagen('http://i.imgur.com/8t9ZJse.gif', 'aIcono22', elementID, height);
-      generarImagen('http://i.imgur.com/av8bxvU.gif', 'aIcono32', elementID, height);
-      generarImagen('http://i.imgur.com/Q3B4Dqz.gif', 'aIcono15', elementID, height);
-      generarImagen('http://i.imgur.com/vWFv3Gt.gif', 'aIcono16', elementID, height);
+      generarImagen('https://i.imgur.com/RzjaSKr.gif', 'aIcono17', elementID, height);
+      generarImagen('https://i.imgur.com/XEHiXuO.gif', 'aIcono18', elementID, height);
+      generarImagen('https://i.imgur.com/1t7YpCo.gif', 'aIcono19', elementID, height);
+      generarImagen('https://i.imgur.com/BzPDfzF.gif', 'aIcono20', elementID, height);
+      generarImagen('https://i.imgur.com/UR5t0o6.gif', 'aIcono21', elementID, height);
+      generarImagen('https://i.imgur.com/aaPvRo4.gif', 'aIcono23', elementID, height);
+      generarImagen('https://i.imgur.com/KKx3thu.gif', 'aIcono25', elementID, height);
+      generarImagen('https://i.imgur.com/KnhAURP.gif', 'aIcono27', elementID, height);
+      generarImagen('https://i.imgur.com/NA84WqF.gif', 'aIcono28', elementID, height);
+      generarImagen('https://i.imgur.com/N2cdFNy.gif', 'aIcono29', elementID, height);
+      generarImagen('https://i.imgur.com/oQYWBTO.gif', 'aIcono30', elementID, height);
+      generarImagen('https://i.imgur.com/YWe8hno.gif', 'aIcono31', elementID, height);
+      generarImagen('https://i.imgur.com/8t9ZJse.gif', 'aIcono22', elementID, height);
+      generarImagen('https://i.imgur.com/av8bxvU.gif', 'aIcono32', elementID, height);
+      generarImagen('https://i.imgur.com/Q3B4Dqz.gif', 'aIcono15', elementID, height);
+      generarImagen('https://i.imgur.com/vWFv3Gt.gif', 'aIcono16', elementID, height);
       insertarSelect(elementID);
     }
   }
@@ -1020,15 +1020,15 @@ function mzscript() {
     try {
       $(document).ready(function () {
         var flag = 0;
-        $(".leftnav").parent().after("<div style='color:#FFF;width:158px;height: 20px;border: 1px solid white; margin-top:10px; padding: 6px 0 0 5px;font-weight:bold' class='cursor' id='configBox'><span style='line-height:16px'>Configuración</span> <img src='http://i.imgur.com/pQqMK52.png' style='vertical-align: middle;float:right;padding-right:3px' /></div>");
+        $(".leftnav").parent().after("<div style='color:#FFF;width:158px;height: 20px;border: 1px solid white; margin-top:10px; padding: 6px 0 0 5px;font-weight:bold' class='cursor' id='configBox'><span style='line-height:16px'>Configuración</span> <img src='https://i.imgur.com/pQqMK52.png' style='vertical-align: middle;float:right;padding-right:3px' /></div>");
         $("#configBox").after("<div style='color:#FFF; text-align:center; margin-top: 10px;font-weight:bold' class='divHidden' id='configBoxFull'>Mostrar skiller <br /> Sí <input type='radio' value='1' name='configOpt' /> No <input type='radio' value='0' name='configOpt' /><br /><div class='mzbtn buttondiv button_account' style='margin-top:8px;box-shadow:none!important'><span class='buttonClassMiddle'><span id='saveConfig' style='white-space: nowrap'>Guardar</span></span><span class='buttonClassRight'>&nbsp;</span></div><br /><span style='font-style:italic;font-size:11px;float:right;font-weight:normal;margin-top:5px'>MZScript ©</span></div>");
         $("#configBox").bind("click", function () {
           collapseExpand("configBoxFull");
           if (!flag) {
-            $("#configBox img").attr('src', 'http://i.imgur.com/j07tHtg.png');
+            $("#configBox img").attr('src', 'https://i.imgur.com/j07tHtg.png');
             flag = 1;
           } else {
-            $("#configBox img").attr('src', 'http://i.imgur.com/pQqMK52.png');
+            $("#configBox img").attr('src', 'https://i.imgur.com/pQqMK52.png');
             flag = 0;
           }
         });
@@ -1075,7 +1075,7 @@ function mzscript() {
         var bp = tablaDeJugadores.rows[jugador].cells[16].innerHTML;
         var expp = tablaDeJugadores.rows[jugador].cells[17].innerHTML;
         var edof = tablaDeJugadores.rows[jugador].cells[18].innerHTML;
-        var nuevo = "&nbsp;<a class='ctooltip'><img src='http://i.imgur.com/xrFgj2d.png' style='cursor:pointer'><span><table cellpadding='0' cellspacing='0' style='width:300px' class='playerTableC'><tr><td width='290' colspan='2' style='font-weight: bold;color:#000060'>(" + numJug + ") " + nombreJug + "</td></tr><tr><td width='120'><b>Valor: </b>" + valorJug + "</td><td width='170'><b>Sueldo: </b>" + sueldoJug + "</td></tr><tr><td><b>Edad: </b>" + edadJug + "</td><td><b>Nacido Temp.: </b>" + season + "</td></tr><tr><td align='right' colspan='2'><i style='margin-right:8px'>MZScript ©</i></td></tr><tr><td width='170'><b>Velocidad </b></td><td><img src='" + transformar(vel) + "'> (" + vel + ")</td></tr><tr><td><b>Resistencia </b></td><td><img src='" + transformar(res) + "'> (" + res + ")</td></tr><tr><td><b>Inteligencia </b></td><td><img src='" + transformar(intel) + "'> (" + intel + ")</td></tr><tr><td><b>Pases </b></td><td><img src='" + transformar(pases) + "'> (" + pases + ")</td></tr><tr><td><b>Remates </b></td><td><img src='" + transformar(rem) + "'> (" + rem + ")</td></tr><tr><td><b>Cabeza </b></td><td><img src='" + transformar(cab) + "'> (" + cab + ")</td></tr><tr><td><b>Atajar </b></td><td><img src='" + transformar(atajar) + "'> (" + atajar + ")</td></tr><tr><td><b>Control </b></td><td><img src='" + transformar(ctrl) + "'> (" + ctrl + ")</td></tr><tr><td><b>Entradas </b></td><td><img src='" + transformar(ent) + "'> (" + ent + ")</td></tr><tr><td><b>Pases largos </b></td><td><img src='" + transformar(cruces) + "'> (" + cruces + ")</td></tr><tr><td><b>Balon parado </b></td><td><img src='" + transformar(bp) + "'> (" + bp + ")</td></tr><tr><td><b>Experiencia </b></td><td><img src='" + transformar(expp) + "'> (" + expp + ")</td></tr><tr><td><b>Edo. fisico </b></td><td><img src='" + transformar(edof) + "'> (" + edof + ")</td></tr></table></span></a>";
+        var nuevo = "&nbsp;<a class='ctooltip'><img src='https://i.imgur.com/xrFgj2d.png' style='cursor:pointer'><span><table cellpadding='0' cellspacing='0' style='width:300px' class='playerTableC'><tr><td width='290' colspan='2' style='font-weight: bold;color:#000060'>(" + numJug + ") " + nombreJug + "</td></tr><tr><td width='120'><b>Valor: </b>" + valorJug + "</td><td width='170'><b>Sueldo: </b>" + sueldoJug + "</td></tr><tr><td><b>Edad: </b>" + edadJug + "</td><td><b>Nacido Temp.: </b>" + season + "</td></tr><tr><td align='right' colspan='2'><i style='margin-right:8px'>MZScript ©</i></td></tr><tr><td width='170'><b>Velocidad </b></td><td><img src='" + transformar(vel) + "'> (" + vel + ")</td></tr><tr><td><b>Resistencia </b></td><td><img src='" + transformar(res) + "'> (" + res + ")</td></tr><tr><td><b>Inteligencia </b></td><td><img src='" + transformar(intel) + "'> (" + intel + ")</td></tr><tr><td><b>Pases </b></td><td><img src='" + transformar(pases) + "'> (" + pases + ")</td></tr><tr><td><b>Remates </b></td><td><img src='" + transformar(rem) + "'> (" + rem + ")</td></tr><tr><td><b>Cabeza </b></td><td><img src='" + transformar(cab) + "'> (" + cab + ")</td></tr><tr><td><b>Atajar </b></td><td><img src='" + transformar(atajar) + "'> (" + atajar + ")</td></tr><tr><td><b>Control </b></td><td><img src='" + transformar(ctrl) + "'> (" + ctrl + ")</td></tr><tr><td><b>Entradas </b></td><td><img src='" + transformar(ent) + "'> (" + ent + ")</td></tr><tr><td><b>Pases largos </b></td><td><img src='" + transformar(cruces) + "'> (" + cruces + ")</td></tr><tr><td><b>Balon parado </b></td><td><img src='" + transformar(bp) + "'> (" + bp + ")</td></tr><tr><td><b>Experiencia </b></td><td><img src='" + transformar(expp) + "'> (" + expp + ")</td></tr><tr><td><b>Edo. fisico </b></td><td><img src='" + transformar(edof) + "'> (" + edof + ")</td></tr></table></span></a>";
         tablaDeJugadores.rows[jugador].cells[0].innerHTML = celda + nuevo;
       }
     }
@@ -1307,56 +1307,56 @@ function mzscript() {
     //var botones = '<td>CC-Bar</td><td>';
     var botones = "<div class='mzbtn buttondiv button_account' title='Insertar Tabla LA-liga'><span class='buttonClassMiddle'><span style='white-space: nowrap' id='btnTabla'>Tabla LA/liga</span></span><span class='buttonClassRight'>&nbsp;</span></div>&nbsp;";
     botones += "<div class='mzbtn buttondiv button_account' title='Subir imágenes a ImgUr'><span class='buttonClassMiddle'><span style='white-space: nowrap' id='upImg'>ImgUr</span></span><span class='buttonClassRight'>&nbsp;</span></div>&nbsp;&nbsp;";
-    botones += "<img src='http://i.imgur.com/3YitWv3.gif' alt='>' id='icono25'/>&nbsp;";
-    botones += "<img src='http://i.imgur.com/Q3B4Dqz.gif' title='(y)' alt='(y)' id='icono31'/>&nbsp;";
-    botones += "<img src='http://i.imgur.com/vWFv3Gt.gif' title='(n)' alt='(n)' id='icono32'/>&nbsp;";
-    botones += "<img src='http://i.imgur.com/jaT1cb4.gif' height='20px' title='wtf' alt='wtf' id='icono51'/>&nbsp;";
-    botones += "<img src='http://i.imgur.com/VfbyDHO.gif' height='20px' title='fail' alt='fail' id='icono44'/>&nbsp;";
-    botones += "<img src='http://i.imgur.com/cheJFuk.gif' height='20px' title='repost' alt='repost' id='icono45'/>&nbsp;";
-    botones += "<img src='http://i.imgur.com/jDjyKTf.gif' title='cri' alt='cri' id='icono52'/>&nbsp;";
-    botones += "<img src='http://i.imgur.com/6PopX5q.gif' title='ha-ha' alt='ha-ha' id='icono7'/>";
-    botones += "<img src='http://i.imgur.com/nRp5BpE.gif' title=':)' alt=':)' id='icono1'/>&nbsp;";
-    botones += "<img src='http://i.imgur.com/CcuKTNz.gif' title=':D' alt=':D' id='icono2'/>&nbsp;";
-    botones += "<img src='http://i.imgur.com/Dfl5ZGS.gif' title='D' alt='D' id='icono53'/>&nbsp;";
-    botones += "<img src='http://i.imgur.com/8t9ZJse.gif' title='xD' alt='xD' id='icono4'/>&nbsp;";
-    botones += "<img src='http://i.imgur.com/1kJhHCs.gif' title=':/' alt=':/' id='icono46'/>&nbsp;";
-    botones += "<img src='http://i.imgur.com/1ncAraF.gif' title=':(' alt=':(' id='icono5'/>&nbsp;";
-    botones += "<img src='http://i.imgur.com/xp6xUJJ.gif' title=':*(' alt=':*(' id='icono6'/>&nbsp;";
-    botones += "<img src='http://i.imgur.com/qOigaWi.png' title=':S' alt=':S' id='icono8'/>&nbsp;";
-    botones += "<img src='http://i.imgur.com/nITjZn5.gif' title='erm' alt='erm' id='icono9'/>&nbsp;";
-    botones += "<img src='http://i.imgur.com/rSqmTPO.gif' title='8-)' alt='8-)' id='icono10'/>&nbsp;";
-    botones += "<img src='http://i.imgur.com/qP1rAQ5.png' title='¬¬' alt='¬¬' id='icono11'/>&nbsp;";
-    botones += "<img src='http://i.imgur.com/HdNdWN0.png' title='porfi' alt='porfi' id='icono14'/>&nbsp;";
-    botones += "<img src='http://i.imgur.com/QuXS7fE.gif' title='O.O' alt='O.O' id='icono13'/>&nbsp;";
-    botones += "<img src='http://i.imgur.com/RUQN2Hy.gif' title='_hm' alt='_hm' id='icono50'/>&nbsp;<br>";
-    botones += "<img src='http://i.imgur.com/QLCdFIE.gif' title='>:(' alt='>:(' id='icono15'/>&nbsp;";
-    botones += "<img src='http://i.imgur.com/55sAO1r.gif' title='>:)' alt='>:)' id='icono16'/>&nbsp;";
-    botones += "<img src='http://i.imgur.com/KbQOSgw.gif' title='flirt' alt='flirt' id='icono17'/>&nbsp;";
-    botones += "<img src='http://i.imgur.com/t5dALqK.gif' title=':P' alt=':P' id='icono18'/>&nbsp;";
-    botones += "<img src='http://i.imgur.com/zpY2A6I.gif' title='|-(' alt='|-(' id='icono19'/>&nbsp;";
-    botones += "<img src='http://i.imgur.com/yPtUjin.gif' title=';)' alt=';)' id='icono20'/>&nbsp;";
-    botones += "<img src='http://i.imgur.com/OOsLDaW.gif' title='(h)' alt='(h)' id='icono21'/>&nbsp;";
-    botones += "<img src='http://i.imgur.com/LdCQyai.png' title='u.u' alt='u.u' id='icono22'/>&nbsp;";
-    botones += "<img src='http://i.imgur.com/KnhAURP.gif' title='shh' alt='shh' id='icono26'/>&nbsp;";
-    botones += "<img src='http://i.imgur.com/BzPDfzF.gif' title='nana' alt='nana' id='icono28'/>";
-    botones += "<img src='http://i.imgur.com/XEHiXuO.gif' height='23px' title='rock' alt='rock' id='icono33'/>";
-    botones += "<img src='http://i.imgur.com/CsCrOnE.gif' title='grr' alt='grr' id='icono36'/>&nbsp;";
-    botones += "<img src='http://i.imgur.com/K2d1Mbv.gif' height='23px' title='jaja' alt='jaja' id='icono37'/>";
-    botones += "<img src='http://i.imgur.com/SMcjsnf.gif' title='eah' alt='eah' id='icono29'/>";
-    botones += "<img src='http://i.imgur.com/aaPvRo4.gif' title='clap' alt='clap' id='icono30'/>";
-    botones += "<img src='http://i.imgur.com/av8bxvU.gif' title='bla' alt='bla' id='icono38'/>";
-    botones += "<img src='http://i.imgur.com/oQYWBTO.gif' title='l' alt='l' id='icono39'/>&nbsp;";
-    botones += "<img src='http://i.imgur.com/z64hDgz.gif' title='grr' alt='grr' id='icono35'/>&nbsp;";
-    botones += "<img src='http://i.imgur.com/NA84WqF.gif' title='angel' alt='angel' id='icono40'/>&nbsp;";
-    botones += "<img src='http://i.imgur.com/N2cdFNy.gif' title='diablo' alt='diablo' id='icono41'/>&nbsp;";
-    botones += "<img src='http://i.imgur.com/YWe8hno.gif' title='baba' alt='baba' id='icono42'/>";
-    botones += "<img src='http://i.imgur.com/1t7YpCo.gif' height='23px' title='x)' alt='x)' id='icono43'/>&nbsp;";
-    botones += "<img src='http://i.imgur.com/UR5t0o6.gif' title='plz' alt='plz' id='icono3'/>&nbsp;";
-    botones += "<img src='http://i.imgur.com/KKx3thu.gif' title='umm' alt='umm' id='icono27'/>";
-    botones += "<img src='http://i.imgur.com/sC8Mgmi.gif' title='facepalm' alt='facepalm' id='icono54'/>&nbsp;";
-    botones += "<img src='http://i.imgur.com/gJw92DZ.gif' title='zzz' alt='zzz' id='icono48'/>";
-    botones += "<img src='http://i.imgur.com/RzjaSKr.gif' title='om' alt='om' id='icono34'/>";
-    botones += "<img src='http://i.imgur.com/7iCxtYD.gif' title='uh' alt='uh' id='icono47'/><br />";
+    botones += "<img src='https://i.imgur.com/3YitWv3.gif' alt='>' id='icono25'/>&nbsp;";
+    botones += "<img src='https://i.imgur.com/Q3B4Dqz.gif' title='(y)' alt='(y)' id='icono31'/>&nbsp;";
+    botones += "<img src='https://i.imgur.com/vWFv3Gt.gif' title='(n)' alt='(n)' id='icono32'/>&nbsp;";
+    botones += "<img src='https://i.imgur.com/jaT1cb4.gif' height='20px' title='wtf' alt='wtf' id='icono51'/>&nbsp;";
+    botones += "<img src='https://i.imgur.com/VfbyDHO.gif' height='20px' title='fail' alt='fail' id='icono44'/>&nbsp;";
+    botones += "<img src='https://i.imgur.com/cheJFuk.gif' height='20px' title='repost' alt='repost' id='icono45'/>&nbsp;";
+    botones += "<img src='https://i.imgur.com/jDjyKTf.gif' title='cri' alt='cri' id='icono52'/>&nbsp;";
+    botones += "<img src='https://i.imgur.com/6PopX5q.gif' title='ha-ha' alt='ha-ha' id='icono7'/>";
+    botones += "<img src='https://i.imgur.com/nRp5BpE.gif' title=':)' alt=':)' id='icono1'/>&nbsp;";
+    botones += "<img src='https://i.imgur.com/CcuKTNz.gif' title=':D' alt=':D' id='icono2'/>&nbsp;";
+    botones += "<img src='https://i.imgur.com/Dfl5ZGS.gif' title='D' alt='D' id='icono53'/>&nbsp;";
+    botones += "<img src='https://i.imgur.com/8t9ZJse.gif' title='xD' alt='xD' id='icono4'/>&nbsp;";
+    botones += "<img src='https://i.imgur.com/1kJhHCs.gif' title=':/' alt=':/' id='icono46'/>&nbsp;";
+    botones += "<img src='https://i.imgur.com/1ncAraF.gif' title=':(' alt=':(' id='icono5'/>&nbsp;";
+    botones += "<img src='https://i.imgur.com/xp6xUJJ.gif' title=':*(' alt=':*(' id='icono6'/>&nbsp;";
+    botones += "<img src='https://i.imgur.com/qOigaWi.png' title=':S' alt=':S' id='icono8'/>&nbsp;";
+    botones += "<img src='https://i.imgur.com/nITjZn5.gif' title='erm' alt='erm' id='icono9'/>&nbsp;";
+    botones += "<img src='https://i.imgur.com/rSqmTPO.gif' title='8-)' alt='8-)' id='icono10'/>&nbsp;";
+    botones += "<img src='https://i.imgur.com/qP1rAQ5.png' title='¬¬' alt='¬¬' id='icono11'/>&nbsp;";
+    botones += "<img src='https://i.imgur.com/HdNdWN0.png' title='porfi' alt='porfi' id='icono14'/>&nbsp;";
+    botones += "<img src='https://i.imgur.com/QuXS7fE.gif' title='O.O' alt='O.O' id='icono13'/>&nbsp;";
+    botones += "<img src='https://i.imgur.com/RUQN2Hy.gif' title='_hm' alt='_hm' id='icono50'/>&nbsp;<br>";
+    botones += "<img src='https://i.imgur.com/QLCdFIE.gif' title='>:(' alt='>:(' id='icono15'/>&nbsp;";
+    botones += "<img src='https://i.imgur.com/55sAO1r.gif' title='>:)' alt='>:)' id='icono16'/>&nbsp;";
+    botones += "<img src='https://i.imgur.com/KbQOSgw.gif' title='flirt' alt='flirt' id='icono17'/>&nbsp;";
+    botones += "<img src='https://i.imgur.com/t5dALqK.gif' title=':P' alt=':P' id='icono18'/>&nbsp;";
+    botones += "<img src='https://i.imgur.com/zpY2A6I.gif' title='|-(' alt='|-(' id='icono19'/>&nbsp;";
+    botones += "<img src='https://i.imgur.com/yPtUjin.gif' title=';)' alt=';)' id='icono20'/>&nbsp;";
+    botones += "<img src='https://i.imgur.com/OOsLDaW.gif' title='(h)' alt='(h)' id='icono21'/>&nbsp;";
+    botones += "<img src='https://i.imgur.com/LdCQyai.png' title='u.u' alt='u.u' id='icono22'/>&nbsp;";
+    botones += "<img src='https://i.imgur.com/KnhAURP.gif' title='shh' alt='shh' id='icono26'/>&nbsp;";
+    botones += "<img src='https://i.imgur.com/BzPDfzF.gif' title='nana' alt='nana' id='icono28'/>";
+    botones += "<img src='https://i.imgur.com/XEHiXuO.gif' height='23px' title='rock' alt='rock' id='icono33'/>";
+    botones += "<img src='https://i.imgur.com/CsCrOnE.gif' title='grr' alt='grr' id='icono36'/>&nbsp;";
+    botones += "<img src='https://i.imgur.com/K2d1Mbv.gif' height='23px' title='jaja' alt='jaja' id='icono37'/>";
+    botones += "<img src='https://i.imgur.com/SMcjsnf.gif' title='eah' alt='eah' id='icono29'/>";
+    botones += "<img src='https://i.imgur.com/aaPvRo4.gif' title='clap' alt='clap' id='icono30'/>";
+    botones += "<img src='https://i.imgur.com/av8bxvU.gif' title='bla' alt='bla' id='icono38'/>";
+    botones += "<img src='https://i.imgur.com/oQYWBTO.gif' title='l' alt='l' id='icono39'/>&nbsp;";
+    botones += "<img src='https://i.imgur.com/z64hDgz.gif' title='grr' alt='grr' id='icono35'/>&nbsp;";
+    botones += "<img src='https://i.imgur.com/NA84WqF.gif' title='angel' alt='angel' id='icono40'/>&nbsp;";
+    botones += "<img src='https://i.imgur.com/N2cdFNy.gif' title='diablo' alt='diablo' id='icono41'/>&nbsp;";
+    botones += "<img src='https://i.imgur.com/YWe8hno.gif' title='baba' alt='baba' id='icono42'/>";
+    botones += "<img src='https://i.imgur.com/1t7YpCo.gif' height='23px' title='x)' alt='x)' id='icono43'/>&nbsp;";
+    botones += "<img src='https://i.imgur.com/UR5t0o6.gif' title='plz' alt='plz' id='icono3'/>&nbsp;";
+    botones += "<img src='https://i.imgur.com/KKx3thu.gif' title='umm' alt='umm' id='icono27'/>";
+    botones += "<img src='https://i.imgur.com/sC8Mgmi.gif' title='facepalm' alt='facepalm' id='icono54'/>&nbsp;";
+    botones += "<img src='https://i.imgur.com/gJw92DZ.gif' title='zzz' alt='zzz' id='icono48'/>";
+    botones += "<img src='https://i.imgur.com/RzjaSKr.gif' title='om' alt='om' id='icono34'/>";
+    botones += "<img src='https://i.imgur.com/7iCxtYD.gif' title='uh' alt='uh' id='icono47'/><br />";
     botones += '<div id="contenedor" style="border: 5px solid green;font-weight:bold;display:none;width:430px; padding:5px;margin:auto">Arrastre su imagen a este espacio <button id="btnUpImg">O clickee acá para elegirla</button> <input style="visibility: collapse; width: 0px;" id="subidor" type="file">';
     botones += '<p id="error" style="font-weight:bold;color:red">Error. El archivo seleccionado no es una imagen.</p><p id="pe">Cargando imagen <img src="http://managerzone.se/img/loading.gif"> &nbsp;espere por favor.</p><p id="link"></p></div>';
     filaNueva.innerHTML = botones;
@@ -1481,259 +1481,259 @@ function mzscript() {
         posteaTabla('msg');
         break;
       case "icono1":
-        posteaIcono('http://i.imgur.com/nRp5BpE.gif', 'message');
+        posteaIcono('https://i.imgur.com/nRp5BpE.gif', 'message');
         break;
       case "icono2":
-        posteaIcono('http://i.imgur.com/CcuKTNz.gif', 'message');
+        posteaIcono('https://i.imgur.com/CcuKTNz.gif', 'message');
         break;
       case "icono3":
-        posteaIcono('http://i.imgur.com/UR5t0o6.gif', 'message');
+        posteaIcono('https://i.imgur.com/UR5t0o6.gif', 'message');
         break;
       case "icono4":
-        posteaIcono('http://i.imgur.com/8t9ZJse.gif', 'message');
+        posteaIcono('https://i.imgur.com/8t9ZJse.gif', 'message');
         break;
       case "icono5":
-        posteaIcono('http://i.imgur.com/1ncAraF.gif', 'message');
+        posteaIcono('https://i.imgur.com/1ncAraF.gif', 'message');
         break;
       case "icono6":
-        posteaIcono('http://i.imgur.com/xp6xUJJ.gif', 'message');
+        posteaIcono('https://i.imgur.com/xp6xUJJ.gif', 'message');
         break;
       case "icono7":
-        posteaIcono('http://i.imgur.com/6PopX5q.gif', 'message');
+        posteaIcono('https://i.imgur.com/6PopX5q.gif', 'message');
         break;
       case "icono8":
-        posteaIcono('http://i.imgur.com/qOigaWi.png', 'message');
+        posteaIcono('https://i.imgur.com/qOigaWi.png', 'message');
         break;
       case "icono9":
-        posteaIcono('http://i.imgur.com/nITjZn5.gif', 'message');
+        posteaIcono('https://i.imgur.com/nITjZn5.gif', 'message');
         break;
       case "icono10":
-        posteaIcono('http://i.imgur.com/rSqmTPO.gif', 'message');
+        posteaIcono('https://i.imgur.com/rSqmTPO.gif', 'message');
         break;
       case "icono11":
-        posteaIcono('http://i.imgur.com/qP1rAQ5.png', 'message');
+        posteaIcono('https://i.imgur.com/qP1rAQ5.png', 'message');
         break;
       case "icono12":
-        posteaIcono('http://i.imgur.com/j79wNCf.gif', 'message');
+        posteaIcono('https://i.imgur.com/j79wNCf.gif', 'message');
         break;
       case "icono13":
-        posteaIcono('http://i.imgur.com/QuXS7fE.gif', 'message');
+        posteaIcono('https://i.imgur.com/QuXS7fE.gif', 'message');
         break;
       case "icono14":
-        posteaIcono('http://i.imgur.com/HdNdWN0.png', 'message');
+        posteaIcono('https://i.imgur.com/HdNdWN0.png', 'message');
         break;
       case "icono15":
-        posteaIcono('http://i.imgur.com/lbQHCKk.gif', 'message');
+        posteaIcono('https://i.imgur.com/lbQHCKk.gif', 'message');
         break;
       case "icono16":
-        posteaIcono('http://i.imgur.com/55sAO1r.gif', 'message');
+        posteaIcono('https://i.imgur.com/55sAO1r.gif', 'message');
         break;
       case "icono17":
-        posteaIcono('http://i.imgur.com/KbQOSgw.gif', 'message');
+        posteaIcono('https://i.imgur.com/KbQOSgw.gif', 'message');
         break;
       case "icono18":
-        posteaIcono('http://i.imgur.com/t5dALqK.gif', 'message');
+        posteaIcono('https://i.imgur.com/t5dALqK.gif', 'message');
         break;
       case "icono19":
-        posteaIcono('http://i.imgur.com/zpY2A6I.gif', 'message');
+        posteaIcono('https://i.imgur.com/zpY2A6I.gif', 'message');
         break;
       case "icono20":
-        posteaIcono('http://i.imgur.com/yPtUjin.gif', 'message');
+        posteaIcono('https://i.imgur.com/yPtUjin.gif', 'message');
         break;
       case "icono21":
-        posteaIcono('http://i.imgur.com/OOsLDaW.gif', 'message');
+        posteaIcono('https://i.imgur.com/OOsLDaW.gif', 'message');
         break;
       case "icono22":
-        posteaIcono('http://i.imgur.com/LdCQyai.png', 'message');
+        posteaIcono('https://i.imgur.com/LdCQyai.png', 'message');
         break;
       case "icono25":
-        posteaIcono('http://i.imgur.com/3YitWv3.gif', 'message');
+        posteaIcono('https://i.imgur.com/3YitWv3.gif', 'message');
         break;
       case "icono26":
-        posteaIcono('http://i.imgur.com/KnhAURP.gif', 'message');
+        posteaIcono('https://i.imgur.com/KnhAURP.gif', 'message');
         break;
       case "icono27":
-        posteaIcono('http://i.imgur.com/KKx3thu.gif', 'message');
+        posteaIcono('https://i.imgur.com/KKx3thu.gif', 'message');
         break;
       case "icono28":
-        posteaIcono('http://i.imgur.com/BzPDfzF.gif', 'message');
+        posteaIcono('https://i.imgur.com/BzPDfzF.gif', 'message');
         break;
       case "icono29":
-        posteaIcono('http://i.imgur.com/SMcjsnf.gif', 'message');
+        posteaIcono('https://i.imgur.com/SMcjsnf.gif', 'message');
         break;
       case "icono30":
-        posteaIcono('http://i.imgur.com/aaPvRo4.gif', 'message');
+        posteaIcono('https://i.imgur.com/aaPvRo4.gif', 'message');
         break;
       case "icono31":
-        posteaIcono('http://i.imgur.com/Q3B4Dqz.gif', 'message');
+        posteaIcono('https://i.imgur.com/Q3B4Dqz.gif', 'message');
         break;
       case "icono32":
-        posteaIcono('http://i.imgur.com/vWFv3Gt.gif', 'message');
+        posteaIcono('https://i.imgur.com/vWFv3Gt.gif', 'message');
         break;
       case "icono33":
-        posteaIcono('http://i.imgur.com/XEHiXuO.gif', 'message');
+        posteaIcono('https://i.imgur.com/XEHiXuO.gif', 'message');
         break;
       case "icono34":
-        posteaIcono('http://i.imgur.com/RzjaSKr.gif', 'message');
+        posteaIcono('https://i.imgur.com/RzjaSKr.gif', 'message');
         break;
       case "icono35":
-        posteaIcono('http://i.imgur.com/z64hDgz.gif', 'message');
+        posteaIcono('https://i.imgur.com/z64hDgz.gif', 'message');
         break;
       case "icono36":
-        posteaIcono('http://i.imgur.com/CsCrOnE.gif', 'message');
+        posteaIcono('https://i.imgur.com/CsCrOnE.gif', 'message');
         break;
       case "icono37":
-        posteaIcono('http://i.imgur.com/K2d1Mbv.gif', 'message');
+        posteaIcono('https://i.imgur.com/K2d1Mbv.gif', 'message');
         break;
       case "icono38":
-        posteaIcono('http://i.imgur.com/av8bxvU.gif', 'message');
+        posteaIcono('https://i.imgur.com/av8bxvU.gif', 'message');
         break;
       case "icono39":
-        posteaIcono('http://i.imgur.com/oQYWBTO.gif', 'message');
+        posteaIcono('https://i.imgur.com/oQYWBTO.gif', 'message');
         break;
       case "icono40":
-        posteaIcono('http://i.imgur.com/NA84WqF.gif', 'message');
+        posteaIcono('https://i.imgur.com/NA84WqF.gif', 'message');
         break;
       case "icono41":
-        posteaIcono('http://i.imgur.com/N2cdFNy.gif', 'message');
+        posteaIcono('https://i.imgur.com/N2cdFNy.gif', 'message');
         break;
       case "icono42":
-        posteaIcono('http://i.imgur.com/YWe8hno.gif', 'message');
+        posteaIcono('https://i.imgur.com/YWe8hno.gif', 'message');
         break;
       case "icono43":
-        posteaIcono('http://i.imgur.com/1t7YpCo.gif', 'message');
+        posteaIcono('https://i.imgur.com/1t7YpCo.gif', 'message');
         break;
       case "icono44":
-        posteaIcono('http://i.imgur.com/VfbyDHO.gif', 'message');
+        posteaIcono('https://i.imgur.com/VfbyDHO.gif', 'message');
         break;
       case "icono45":
-        posteaIcono('http://i.imgur.com/cheJFuk.gif', 'message');
+        posteaIcono('https://i.imgur.com/cheJFuk.gif', 'message');
         break;
       case "icono46":
-        posteaIcono('http://i.imgur.com/1kJhHCs.gif', 'message');
+        posteaIcono('https://i.imgur.com/1kJhHCs.gif', 'message');
         break;
       case "icono47":
-        posteaIcono('http://i.imgur.com/7iCxtYD.gif', 'message');
+        posteaIcono('https://i.imgur.com/7iCxtYD.gif', 'message');
         break;
       case "icono48":
-        posteaIcono('http://i.imgur.com/gJw92DZ.gif', 'message');
+        posteaIcono('https://i.imgur.com/gJw92DZ.gif', 'message');
         break;
       case "icono49":
-        posteaIcono('http://i.imgur.com/92QYUDu.gif', 'message');
+        posteaIcono('https://i.imgur.com/92QYUDu.gif', 'message');
         break;
       case "icono50":
-        posteaIcono('http://i.imgur.com/RUQN2Hy.gif', 'message');
+        posteaIcono('https://i.imgur.com/RUQN2Hy.gif', 'message');
         break;
       case "icono51":
-        posteaIcono('http://i.imgur.com/jaT1cb4.gif', 'message');
+        posteaIcono('https://i.imgur.com/jaT1cb4.gif', 'message');
         break;
       case "icono52":
-        posteaIcono('http://i.imgur.com/jDjyKTf.gif', 'message');
+        posteaIcono('https://i.imgur.com/jDjyKTf.gif', 'message');
         break;
       case "icono53":
-        posteaIcono('http://i.imgur.com/Dfl5ZGS.gif', 'message');
+        posteaIcono('https://i.imgur.com/Dfl5ZGS.gif', 'message');
         break;
       case "icono54":
-        posteaIcono('http://i.imgur.com/sC8Mgmi.gif', 'message');
+        posteaIcono('https://i.imgur.com/sC8Mgmi.gif', 'message');
         break;
       case "aIcono0":
-        posteaIcono('http://i.imgur.com/nRp5BpE.gif', 'msg');
+        posteaIcono('https://i.imgur.com/nRp5BpE.gif', 'msg');
         break;
       case "aIcono1":
-        posteaIcono('http://i.imgur.com/CcuKTNz.gif', 'msg');
+        posteaIcono('https://i.imgur.com/CcuKTNz.gif', 'msg');
         break;
       case "aIcono2":
-        posteaIcono('http://i.imgur.com/NPyAJM5.gif', 'msg');
+        posteaIcono('https://i.imgur.com/NPyAJM5.gif', 'msg');
         break;
       case "aIcono3":
-        posteaIcono('http://i.imgur.com/1ncAraF.gif', 'msg');
+        posteaIcono('https://i.imgur.com/1ncAraF.gif', 'msg');
         break;
       case "aIcono4":
-        posteaIcono('http://i.imgur.com/xp6xUJJ.gif', 'msg');
+        posteaIcono('https://i.imgur.com/xp6xUJJ.gif', 'msg');
         break;
       case "aIcono5":
-        posteaIcono('http://i.imgur.com/qOigaWi.png', 'msg');
+        posteaIcono('https://i.imgur.com/qOigaWi.png', 'msg');
         break;
       case "aIcono6":
-        posteaIcono('http://i.imgur.com/rSqmTPO.gif', 'msg');
+        posteaIcono('https://i.imgur.com/rSqmTPO.gif', 'msg');
         break;
       case "aIcono7":
-        posteaIcono('http://i.imgur.com/qP1rAQ5.png', 'msg');
+        posteaIcono('https://i.imgur.com/qP1rAQ5.png', 'msg');
         break;
       case "aIcono8":
-        posteaIcono('http://i.imgur.com/RUQN2Hy.gif', 'msg');
+        posteaIcono('https://i.imgur.com/RUQN2Hy.gif', 'msg');
         break;
       case "aIcono9":
-        posteaIcono('http://i.imgur.com/QuXS7fE.gif', 'msg');
+        posteaIcono('https://i.imgur.com/QuXS7fE.gif', 'msg');
         break;
       case "aIcono10":
-        posteaIcono('http://i.imgur.com/Bf8NC56.png', 'msg');
+        posteaIcono('https://i.imgur.com/Bf8NC56.png', 'msg');
         break;
       case "aIcono11":
-        posteaIcono('http://i.imgur.com/CZT1Eec.gif', 'msg');
+        posteaIcono('https://i.imgur.com/CZT1Eec.gif', 'msg');
         break;
       case "aIcono12":
-        posteaIcono('http://i.imgur.com/OOsLDaW.gif', 'msg');
+        posteaIcono('https://i.imgur.com/OOsLDaW.gif', 'msg');
         break;
       case "aIcono13":
-        posteaIcono('http://i.imgur.com/yPtUjin.gif', 'msg');
+        posteaIcono('https://i.imgur.com/yPtUjin.gif', 'msg');
         break;
       case "aIcono14":
-        posteaIcono('http://i.imgur.com/LdCQyai.png', 'msg');
+        posteaIcono('https://i.imgur.com/LdCQyai.png', 'msg');
         break;
       case "aIcono15":
-        posteaIcono('http://i.imgur.com/Q3B4Dqz.gif', 'msg');
+        posteaIcono('https://i.imgur.com/Q3B4Dqz.gif', 'msg');
         break;
       case "aIcono16":
-        posteaIcono('http://i.imgur.com/vWFv3Gt.gif', 'msg');
+        posteaIcono('https://i.imgur.com/vWFv3Gt.gif', 'msg');
         break;
       case "aIcono17":
-        posteaIcono('http://i.imgur.com/RzjaSKr.gif', 'msg');
+        posteaIcono('https://i.imgur.com/RzjaSKr.gif', 'msg');
         break;
       case "aIcono18":
-        posteaIcono('http://i.imgur.com/XEHiXuO.gif', 'msg');
+        posteaIcono('https://i.imgur.com/XEHiXuO.gif', 'msg');
         break;
       case "aIcono19":
-        posteaIcono('http://i.imgur.com/1t7YpCo.gif', 'msg');
+        posteaIcono('https://i.imgur.com/1t7YpCo.gif', 'msg');
         break;
       case "aIcono20":
-        posteaIcono('http://i.imgur.com/BzPDfzF.gif', 'msg');
+        posteaIcono('https://i.imgur.com/BzPDfzF.gif', 'msg');
         break;
       case "aIcono21":
-        posteaIcono('http://i.imgur.com/UR5t0o6.gif', 'msg');
+        posteaIcono('https://i.imgur.com/UR5t0o6.gif', 'msg');
         break;
       case "aIcono22":
-        posteaIcono('http://i.imgur.com/8t9ZJse.gif', 'msg');
+        posteaIcono('https://i.imgur.com/8t9ZJse.gif', 'msg');
         break;
       case "aIcono23":
-        posteaIcono('http://i.imgur.com/aaPvRo4.gif', 'msg');
+        posteaIcono('https://i.imgur.com/aaPvRo4.gif', 'msg');
         break;
       case "aIcono24":
-        posteaIcono('http://i.imgur.com/XdfJFFs.gif', 'msg');
+        posteaIcono('https://i.imgur.com/XdfJFFs.gif', 'msg');
         break;
       case "aIcono25":
-        posteaIcono('http://i.imgur.com/KKx3thu.gif', 'msg');
+        posteaIcono('https://i.imgur.com/KKx3thu.gif', 'msg');
         break;
       case "aIcono26":
-        posteaIcono('http://i.imgur.com/zpY2A6I.gif', 'msg');
+        posteaIcono('https://i.imgur.com/zpY2A6I.gif', 'msg');
         break;
       case "aIcono27":
-        posteaIcono('http://i.imgur.com/KnhAURP.gif', 'msg');
+        posteaIcono('https://i.imgur.com/KnhAURP.gif', 'msg');
         break;
       case "aIcono28":
-        posteaIcono('http://i.imgur.com/NA84WqF.gif', 'msg');
+        posteaIcono('https://i.imgur.com/NA84WqF.gif', 'msg');
         break;
       case "aIcono29":
-        posteaIcono('http://i.imgur.com/N2cdFNy.gif', 'msg');
+        posteaIcono('https://i.imgur.com/N2cdFNy.gif', 'msg');
         break;
       case "aIcono30":
-        posteaIcono('http://i.imgur.com/oQYWBTO.gif', 'msg');
+        posteaIcono('https://i.imgur.com/oQYWBTO.gif', 'msg');
         break;
       case "aIcono31":
-        posteaIcono('http://i.imgur.com/YWe8hno.gif', 'msg');
+        posteaIcono('https://i.imgur.com/YWe8hno.gif', 'msg');
         break;
       case "aIcono32":
-        posteaIcono('http://i.imgur.com/av8bxvU.gif', 'msg');
+        posteaIcono('https://i.imgur.com/av8bxvU.gif', 'msg');
         break;
       case "imagenRed":
         mostrando();
