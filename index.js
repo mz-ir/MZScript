@@ -1,15 +1,15 @@
 // ==UserScript==
 // @name           MZScript© | por cCc vAdEr & Serbini Ini
-// @namespace	     https://greasyfork.org/scripts/1752-mzscript-por-ccc-vader-serbini-ini
+// @namespace      https://greasyfork.org/scripts/1752-mzscript-por-ccc-vader-serbini-ini
 // @description    Características y funcionalidades extras para el sitio de ManagerZone
-// @include        http*://*managerzone.*
+// @match          https://www.managerzone.com/*
 // @grant          none
 // @version        3.3.r
 // @copyright      Copyleft(c) 2010-2018, c_c - serbocapo
-// @authors        c_c (c_c_managerzone@yahoo.com) | serbocapo (serbocapo@managerzone.com)
-// @credits	       some icons are by Yusuke Kamiyamane [http://p.yusukekamiyamane.com/]
-// @downloadURL https://update.greasyfork.org/scripts/1752/MZScript%C2%A9%20%7C%20por%20cCc%20vAdEr%20%20Serbini%20Ini.user.js
-// @updateURL https://update.greasyfork.org/scripts/1752/MZScript%C2%A9%20%7C%20por%20cCc%20vAdEr%20%20Serbini%20Ini.meta.js
+// @author         c_c (c_c_managerzone@yahoo.com) | serbocapo (serbocapo@managerzone.com)
+// @credits        some icons are by Yusuke Kamiyamane [http://p.yusukekamiyamane.com/]
+// @downloadURL    https://update.greasyfork.org/scripts/1752/MZScript%C2%A9%20%7C%20por%20cCc%20vAdEr%20%20Serbini%20Ini.user.js
+// @updateURL      https://update.greasyfork.org/scripts/1752/MZScript%C2%A9%20%7C%20por%20cCc%20vAdEr%20%20Serbini%20Ini.meta.js
 // ==/UserScript==
 
 function addJQuery(callback) {
@@ -149,6 +149,9 @@ function mzscript() {
     var tid = 0, fila, i, hrefN;
     for (i = 0; i < filas; i++) {
       fila = equipos[i].cells[1];
+      if (!fila.childNodes[0]?.href) {
+        continue;
+      }
       tid = fila.childNodes[0].href.split("&")[1].replace("tid=", "");
       if (cp)
         hrefN = "?p=private_cup&sub=schedule&cid=" + cid.toString() + "&tid=" + tid.toString() + "&cuptype=partner";
