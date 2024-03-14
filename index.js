@@ -192,6 +192,9 @@ function mzscript() {
           var equipoId = 0, fila, i;
           for (i = 0; i < filas; i++) {
             fila = equipos[i];
+            if(!fila.cells[1].childNodes[0].href) {
+              continue;
+            }
             equipoId = fila.cells[1].childNodes[0].href.split("&")[1].replace("tid=", "");
             xmlhttp = new XMLHttpRequest();
             xmlhttp.open("GET", "/xml/manager_data.php?sport_id=1&team_id=" + equipoId.toString(), false);
