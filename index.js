@@ -22,7 +22,7 @@ function addJQuery(callback) {
   }, false);
   document.body.appendChild(script);
 }
-addJQuery(mzscript);
+// addJQuery(mzscript);
 
 function mzscript() {
   (function () {
@@ -1777,3 +1777,24 @@ function mzscript() {
     }
   }, true);
 }
+
+(function () {
+  function inject() {
+    var waitForJQuery = function () {
+      if (typeof jQuery != "undefined") {
+        mzscript()
+      } else {
+          window.setTimeout(waitForJQuery, 100);
+      }
+    };
+    window.setTimeout(waitForJQuery, 100);
+  }
+
+  if (document.readyState === "loading") {
+      // Loading hasn't finished yet
+      document.addEventListener("DOMContentLoaded", inject);
+  } else {
+      // `DOMContentLoaded` has already fired
+      inject();
+  }
+})();
